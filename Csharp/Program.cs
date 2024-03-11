@@ -28,3 +28,10 @@ Console.WriteLine(Math.Pow(3.5, 2));
 Console.WriteLine(Math.Max(3.5, 2));
 Console.WriteLine(Math.Sqrt(36));
 Console.WriteLine(Math.Min(4, 5));
+
+//getting user inputs
+Console.Write("Enter your name ");
+string name = Console.ReadLine();
+Console.Write("Enter your age ");
+string age = Console.ReadLine();
+Console.WriteLine("Hello " + name + " your age is " + age);
