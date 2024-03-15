@@ -264,3 +264,77 @@ static int cube(int num)
 //    Console.WriteLine("Double: " +  mynum2);
 
 //}
+
+//day 3
+//guessing game
+
+//string secretWord = "Sidhant";
+//string guess = "";
+//int guessCount = 0;
+//int guessLimit = 3;
+//bool outOfGuesses = false;
+//while (guess != secretWord && !outOfGuesses)
+//{
+//    if (guessCount < guessLimit)
+//    {
+//        Console.Write("Enter a guess \n");
+//        guess = Console.ReadLine();
+//        guessCount++;
+//    }
+//    else
+//    {
+//        outOfGuesses = true;
+//    }
+//}
+//    if (outOfGuesses)
+//    {
+//        Console.Write(" You Lose!!");
+//    }
+//    else
+//    {
+//        Console.Write(" You won!!");
+//    }
+
+//exponent method
+
+//Console.WriteLine(GetPow(3, 5));
+//static int GetPow(int baseNum,int powNum)
+//{
+//    int result = 1;
+//    for (int i=0;i<powNum;i++)
+//    {
+//        result=result*baseNum;  
+//    }
+//    return result;
+//}
+
+//2D array
+//int[,] numbers =  //[,] indicates csharp that it is 2d array
+//{
+//    {1,2 },
+//    {3,4 },
+//    {5,6 }
+//};
+
+//Console.WriteLine(numbers[0,1]);
+
+
+//exception handling
+try
+{
+    Console.Write("Enter a number\n");
+    int num1 = Convert.ToInt32(Console.ReadLine());
+    Console.Write("Enter another number\n");
+    int num2 = Convert.ToInt32(Console.ReadLine());
+
+    Console.WriteLine(num1 / num2);
+}
+catch (DivideByZeroException e)  //we can specify type of exception or can generally define all sorts of exception
+{
+    Console.WriteLine(e.Message);
+}
+catch (FormatException e)
+{
+    Console.WriteLine(e.Message);
+}
+
